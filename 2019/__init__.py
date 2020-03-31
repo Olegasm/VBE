@@ -6,12 +6,7 @@ import filecmp
 def exists():
     """programa.cpp egzistuoja"""
     check50.exists("programa.cpp")
-    check50.include("1.txt", "2.txt")
-    
-@check50.check(exists)    
-def runCPP():
-    """Bandom paduoti input ir gauti output is c++ programos"""
-    check50.run("./programa").stdin("foo").stdout("blah").exit(0)    
+    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
@@ -20,6 +15,12 @@ def compiles():
     #g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
     #CXXFLAGS="-std=c++11 -Wall -Wextra -O0 -ggdb3"
     #cflags = "-std:c++11"
+    
+@check50.check(compiles)    
+def runCPP():
+    """Bandom paduoti input ir gauti output is c++ programos"""
+    check50.run("./programa").stdin("foo").stdout("blah").exit(0)
+    
 @check50.check(exists)
 def isOutput():
     """Rastas U1rez.txt"""
