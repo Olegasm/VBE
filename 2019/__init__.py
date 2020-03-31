@@ -12,6 +12,11 @@ def exists():
 def runCPP():
     """Bandom paduoti input ir gauti output is c++ programos"""
     check50.run("./programa").stdin("foo").stdout("blah").exit(0)    
+
+@check50.check(exists)
+def compiles():
+    """programa.cpp compiles."""
+    check50.c.compile("programa.c", lcs50=True)    
     
 @check50.check(exists)
 def isOutput():
