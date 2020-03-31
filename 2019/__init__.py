@@ -8,6 +8,11 @@ def exists():
     check50.exists("programa.cpp")
     check50.include("1.txt", "2.txt")
     
+@check50.check()    
+def runCPP():
+    '''Bandom paduoti input ir gauti output is c++ programos
+    check50.run("./programa").stdin("foo").stdout("blah").exit(0)    
+    
 @check50.check(exists)
 def isOutput():
     """Rastas U1rez.txt"""
