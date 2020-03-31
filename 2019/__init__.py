@@ -16,9 +16,10 @@ def runCPP():
 @check50.check(exists)
 def compiles():
     """programa.cpp compiles."""
-    check50.c.compile("programa.cpp", cc="clang++", cflags = "-std:c++11", lcs50=True)    
+    check50.c.compile("programa.cpp", cc="clang++", lcs50=True)    
     #g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
     #CXXFLAGS="-std=c++11 -Wall -Wextra -O0 -ggdb3"
+    #cflags = "-std:c++11"
 @check50.check(exists)
 def isOutput():
     """Rastas U1rez.txt"""
