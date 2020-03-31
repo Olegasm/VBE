@@ -1,4 +1,4 @@
-# Tutorial „išpręskime VBE IT užduotį“
+# Išpręskime VBE IT 2019 metų užduotį „Aliejus“
 
 {% spoiler "IT egzamino uzduotis :scream:"%}
 
@@ -60,22 +60,57 @@ kiek litrų aliejaus liko neišpilstyta.
 {% spoiler "Užduoties suvokimas :muscle: %}
 
 {% spoiler "Vaizdo medžiaga :movie_camera:" %}
-{% video https://youtu.be/VtBuu8oIkFg %}
+{% video https://youtu.be/wzzUCeGZ3Os %}
 {% endspoiler %}
 
 {% spoiler "Tekstinis vedlys :page_with_curl:" %}
-RTFM
+Vieta Jūsų detaliam aprašymui
 {% endspoiler %} 
 
 {% endspoiler %}
 
-{% spoiler "Skaldyk ir valdyk :sunglasses:" %}
+{% spoiler "Algoritminis mąstymas :sunglasses:" %}
 ![Image of To-Do](https://pbs.twimg.com/media/C1jVr21XcAAosxF.jpg)
+1. Sukompiliuokite savo programą
+1. Paleiskite programa
+1. Parasykite koda:
+    1. Atspausdinkite kiek aliejaus yra ispilstyta ir kiek jo liko
+    1.  ir t.t.
 {% endspoiler %} 
 
 {% spoiler "Programavimas :computer:" %}
-Pereikime prie dešinės ekrano pusės
 ![Image of point left](https://media1.giphy.com/media/1n9At3XeXvyVZdydfK/giphy.gif)
+
+
+{% spoiler "Užuomina 1: Rašymas į bylą" %}
+## Įsisavink duomenų rašymą į bylą iš šitos nuorodos:
+http://www.cplusplus.com/doc/tutorial/files/
+{% endspoiler %} 
+
+{% spoiler "Užuomina 2: Masyvų naudojimas" %}
+## Arrays in C/C++
+
+An array in C or C++ is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to store similar type of elements as in the data type must be the same for all elements. They can be used to store collection of primitive data types such as int, float, double, char, etc of any particular type. To add to it, an array in C or C++ can store derived data types such as the structures, pointers etc. Given below is the picturesque representation of an array.
+
+![Image of point left](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/05/Arrays.png)
+
+## Why do we need arrays?
+
+We can use normal variables (v1, v2, v3, ..) when we have a small number of objects, but if we want to store a large number of instances, it becomes difficult to manage them with normal variables. The idea of an array is to represent many instances in one variable.
+
+
+![Image of point left](https://www.geeksforgeeks.org/wp-content/uploads/Array-Declaration-In-C.png)
+
+{% endspoiler %} 
+
+{% spoiler "Užuomina 3: Algoritmo sugalvojimas" %}
+Tu gali :D
+{% endspoiler %} 
+
+{% spoiler "Užuomina n:" %}
+Tu gerai varai!
+{% endspoiler %} 
+
 {% endspoiler %} 
 
 {% spoiler "2020 IT VBE užduotys :trollface:" %}
