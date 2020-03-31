@@ -16,7 +16,7 @@ def runCPP():
 @check50.check(exists)
 def compiles():
     """programa.cpp compiles."""
-    check50.c.compile("programa.cpp", cc='clang++', lcs50=True)    
+    check50.c.compile("programa.cpp", CXX='clang++', lcs50=True)    
     
 @check50.check(exists)
 def isOutput():
