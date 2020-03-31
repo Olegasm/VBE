@@ -16,7 +16,7 @@ def runCPP():
 @check50.check(exists)
 def compiles():
     """programa.cpp compiles."""
-    check50.c.compile("programa.cpp", cc="clang++", cflags={'ggdb': True, 'lm': True, 'std': 'c11'},  lcs50=True)    
+    check50.c.compile("programa.cpp", cc="clang++",  lcs50=True)    
     #g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
     #CXXFLAGS="-std=c++11 -Wall -Wextra -O0 -ggdb3"
 @check50.check(exists)
