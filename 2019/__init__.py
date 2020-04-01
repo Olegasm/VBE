@@ -20,6 +20,12 @@ def compiles():
 def runCPP():
     """Bandom paduoti input ir gauti output is c++ programos"""
     check50.run("./programa").stdin("foo").stdout("blah").exit()
+
+@check50.check(compiles)
+def test2():
+    """handles a height of 2 correctly"""
+    out = check50.run("./programa").stdin("2").stdout()
+    check_output(out, open("1.txt").read())    
     
 @check50.check(exists)
 def isOutput():
@@ -48,6 +54,17 @@ def compare_files1(output, correct):
     help = None
     if output[0] != correct[0]:
         help = "Vieno litro indo pripilymas apskaičiuotas neteisingai"
+    raise check50.Mismatch(correct, output, help=help)    
+
+def check_output(output, correct):
+    if output == correct:
+        return
+    
+    output = output.splitlines()
+    correct = correct.splitlines()
+
+    help = None
+
     raise check50.Mismatch(correct, output, help=help)    
     
 #@check50.check(exists)
