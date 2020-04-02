@@ -21,7 +21,7 @@ def rodrigo():
     """responds to name Rodrigo"""
     check50.run("./hello").stdout("Rodrigo").exit()
 
-@check50.check(compiles)    
-def myTest():
-    """Bandom paduoti input ir gauti output is c programos"""
-    check50.run("./programa").stdin("blah", timeout=60).stdout("blah", timeout=60).exit(timeout=60)
+#@check50.check(compiles)    
+#def myTest():
+#    """Bandom paduoti input ir gauti output is c programos"""
+#    check50.run("./programa").stdin("blah", timeout=60).stdout("blah", timeout=60).exit(timeout=60)
