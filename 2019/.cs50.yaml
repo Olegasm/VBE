@@ -10,4 +10,4 @@ lab50:
     - !include "U1.txt"
 
 submit50:
-  files: &check50_files
+  files: *check50_files
