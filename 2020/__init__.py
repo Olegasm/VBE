@@ -20,3 +20,8 @@ def veronica():
 def brian():
     """responds to name Brian."""
     check50.run("./hello").stdin("Brian").stdout("Brian").exit()
+
+@check50.check(compiles)    
+def runCPP():
+    """Bandom paduoti input ir gauti output is c++ programos"""
+    check50.run("./hello").stdin("blah", timeout=60).stdout("blah", timeout=60).exit(timeout=60)
