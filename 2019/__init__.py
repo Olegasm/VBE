@@ -2,8 +2,6 @@ import check50
 import check50.c
 #import filecmp
 
-
-
 @check50.check()
 def exists():
     """c.cpp egzistuoja."""
@@ -13,7 +11,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """c.cpp compiles."""
-    check50.c.compile("c.cpp", cc="g++")
+    check50.c.compile("c.cpp", cc="g++", std="c++11")
     #Last working line: check50.c.compile("programa.cpp", cc="g++", lcrypt=True, lcs50=True, lm=True)
     #check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, Wall=True, Wextra=True, ggdb3=True, O0=True)    
     
