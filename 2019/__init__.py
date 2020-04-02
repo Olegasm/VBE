@@ -9,7 +9,7 @@ def exists():
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
-def compiles()
+def compiles():
     """c.cpp compiles."""
     check50.run("g++ c.cpp -lcrypt -lcs50 -lm -o c").exit(timeout = 25)
 '''
