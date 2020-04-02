@@ -11,7 +11,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """programa.cpp compiles."""
-    check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, wall=True, wexra=True, ggdb3=True)    
+    check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, Wall=True, Wextra=True, ggdb3=True)    
     #g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
     #CXXFLAGS="-std=c++11 -Wall -Wextra -O0 -ggdb3"
     #cflags = "-std:c++11"
