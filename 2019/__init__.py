@@ -13,7 +13,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """programa.cpp compiles."""
-    check50.c.compile("programa.cpp", cc="g++", lcrypt=True)
+    check50.c.compile("programa.cpp", cc="g++")
     #Last working line: check50.c.compile("programa.cpp", cc="g++", lcrypt=True, lcs50=True, lm=True)
     #check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, Wall=True, Wextra=True, ggdb3=True, O0=True)    
     
