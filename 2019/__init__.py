@@ -22,7 +22,7 @@ def compiles():
 @check50.check(compiles)    
 def runCPP():
     """Bandom paduoti input ir gauti output is c++ programos."""
-    check50.run("./c").stdin("blah").stdout("blah").exit()
+    check50.run("./c 2>&1").stdin("blah").stdout("blah").exit()
 '''
 @check50.check(compiles)
 def test2():
