@@ -6,21 +6,21 @@ import check50.c
 
 @check50.check()
 def exists():
-    """programa.cpp egzistuoja."""
-    check50.exists("programa.cpp")
+    """c.cpp egzistuoja."""
+    check50.exists("c.cpp")
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
-    """programa.cpp compiles."""
-    check50.c.compile("programa.cpp", cc="g++")
+    """c.cpp compiles."""
+    check50.c.compile("c.cpp", cc="g++")
     #Last working line: check50.c.compile("programa.cpp", cc="g++", lcrypt=True, lcs50=True, lm=True)
     #check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, Wall=True, Wextra=True, ggdb3=True, O0=True)    
     
 @check50.check(compiles)    
 def runCPP():
     """Bandom paduoti input ir gauti output is c++ programos."""
-    check50.run("./programa").stdin("blah").stdout("blah").exit()
+    check50.run("./c").stdin("blah").stdout("blah").exit()
 '''
 @check50.check(compiles)
 def test2():
