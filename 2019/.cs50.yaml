@@ -1,5 +1,5 @@
 check50:
-  files: &check50_files
+  files:
     - !exclude "*"
     - !require "programa.cpp"
 
@@ -10,4 +10,6 @@ lab50:
     - !include "U1.txt"
 
 submit50:
-  files: *check50_files
+  files:
+      - !exclude "*"
+      - !require "programa.cpp"
