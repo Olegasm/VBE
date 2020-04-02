@@ -1,7 +1,8 @@
-#include <cstdio>
+#include<iostream>
+
 using namespace std;
 
-int main(void)
+int main()
 {
     char mystr[5];
     cout << "Enter blah: ";
