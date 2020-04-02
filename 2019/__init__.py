@@ -24,7 +24,7 @@ def runCPP():
 
 @check50.check(compiles)
 def test2():
-    """handles a height of 2 correctly"""
+    """Testuoja patalpina output i kintamaji"""
     out = check50.run("./programa").stdin("2").stdout()
     check_output(out, open("1.txt").read())    
     
