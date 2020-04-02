@@ -1,27 +1,24 @@
 import check50
 import check50.c
-import filecmp
+#import filecmp
 
 @check50.check()
 def exists():
     """programa.cpp egzistuoja."""
     check50.exists("programa.cpp")
-    check50.include("1.txt", "2.txt") 
+#    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
     """programa.cpp compiles."""
     check50.c.compile("programa.cpp", cc="g++", lcrypt=True, lcs50=True, lm=True)
     #check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, Wall=True, Wextra=True, ggdb3=True, O0=True)    
-    #g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
-    #CXXFLAGS="-std=c++11 -Wall -Wextra -O0 -ggdb3"
-    #cflags = "-std:c++11"
     
 @check50.check(compiles)    
 def runCPP():
     """Bandom paduoti input ir gauti output is c++ programos."""
     check50.run("./programa").stdin("blah", timeout=60).stdout("blah", timeout=60).exit(timeout=60)
-
+'''
 @check50.check(compiles)
 def test2():
     """Testuoja ar patalpina output i kintamaji."""
@@ -67,7 +64,7 @@ def check_output(output, correct):
     help = None
 
     raise check50.Mismatch(correct, output, help=help)    
-    
+''' 
 #@check50.check(exists)
 #def compiles():
 #    """U1.c kompiliuojasi"""
