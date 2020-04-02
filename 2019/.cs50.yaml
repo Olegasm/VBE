@@ -1,15 +1,14 @@
 check50:
   files:
     - !exclude "*"
-    - !require "programa.cpp"
+    - !require "c.cpp"
 
 lab50:
   files:
     - !exclude "*"
-    - !include "programa.cpp"
-    - !include "U1.txt"
+    - !include "c.cpp"
 
 submit50:
   files:
     - !exclude "*"
-    - !require "programa.cpp"
+    - !require "c.cpp"
