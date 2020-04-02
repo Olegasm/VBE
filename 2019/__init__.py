@@ -9,6 +9,11 @@ def exists():
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
+def compiles()
+    """c.cpp compiles."""
+    check50.run("g++ c.cpp -lcrypt -lcs50 -lm -o c").exit(timeout = 25)
+'''
+@check50.check(exists)
 def compiles():
     """c.cpp compiles."""
     check50.c.compile("c.cpp", cc="clang++", std="c++11", lcrypt=True, lcs50=True, lm=True)
@@ -18,11 +23,12 @@ def compiles():
     # check50.c.compile("programa.cpp", cc="clang++", std="c++11", lcs50=True, Wall=True, Wextra=True, ggdb3=True, O0=True)    
     # check50.c.CC= 'g++'
     # check50.c.CFLAGS= {'ggdb': True, 'lm': True, 'std': 'c++11'}
-    
+'''
+
 @check50.check(compiles)    
 def runCPP():
     """Bandom paduoti input ir gauti output is c++ programos."""
-    check50.run("./c 2>&1").stdin("blah").stdout("blah").exit()
+    check50.run("./c").stdin("blah").stdout("blah").exit()
 '''
 @check50.check(compiles)
 def test2():
