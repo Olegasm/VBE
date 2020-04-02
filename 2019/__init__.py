@@ -4,7 +4,7 @@ import filecmp
 
 @check50.check()
 def exists():
-    """programa.cpp egzistuoja"""
+    """programa.cpp egzistuoja."""
     check50.exists("programa.cpp")
     check50.include("1.txt", "2.txt") 
 
@@ -19,12 +19,12 @@ def compiles():
     
 @check50.check(compiles)    
 def runCPP():
-    """Bandom paduoti input ir gauti output is c++ programos"""
-    check50.run("./programa.cpp").stdin("blah", timeout=60).stdout("blah", timeout=60).exit(timeout=60)
+    """Bandom paduoti input ir gauti output is c++ programos."""
+    check50.run("./programa").stdin("blah", timeout=60).stdout("blah", timeout=60).exit(timeout=60)
 
 @check50.check(compiles)
 def test2():
-    """Testuoja ar patalpina output i kintamaji"""
+    """Testuoja ar patalpina output i kintamaji."""
     out = check50.run("./programa").stdin("2").stdout()
     check_output(out, open("1.txt").read())    
     
