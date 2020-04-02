@@ -1,7 +1,6 @@
 import check50
 import check50.c
 #import filecmp
-check50.c.CC= 'g++'
 
 @check50.check()
 def exists():
@@ -12,7 +11,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """c.cpp compiles."""
-    check50.c.compile("c.cpp", std="c++11")
+    check50.c.compile("c.cpp", cc="g++", std="c++11")
     # minimum: check50.c.compile("c.cpp", cc="g++", std="c++11")
     # kaip kompiliuojamas C++ kodas sandbox'e: g++     c.cpp  -lcrypt -lcs50 -lm -o c
     # Last working line: check50.c.compile("programa.cpp", cc="g++", lcrypt=True, lcs50=True, lm=True)
