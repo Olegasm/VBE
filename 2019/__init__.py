@@ -15,6 +15,7 @@ def compiles():
     #g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
     #CXXFLAGS="-std=c++11 -Wall -Wextra -O0 -ggdb3"
     #cflags = "-std:c++11"
+    # g++     programa.cpp  -lcrypt -lcs50 -lm -o programa
     
 @check50.check(compiles)    
 def runCPP():
