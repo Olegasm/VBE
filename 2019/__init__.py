@@ -4,13 +4,13 @@ import check50.c
 
 @check50.check()
 def exists():
-    """c.cpp egzistuoja."""
-    check50.exists("c.cpp")
+    """aliejus.cpp egzistuoja."""
+    check50.exists("aliejus.cpp")
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
-    """c.cpp compiles."""
+    """aliejus.cpp compiles."""
     check50.run("g++ c.cpp -lcrypt -lcs50 -lm -o c").exit(timeout = 25)
 '''
 @check50.check(exists)
@@ -26,9 +26,9 @@ def compiles():
 '''
 
 @check50.check(compiles)    
-def runCPP():
+def run_aliejus():
     """Bandom paduoti input ir gauti output is c++ programos."""
-    check50.run("./c").stdin("blah").stdout("blah").exit()
+    check50.run("./aliejus").stdin("blah").stdout("blah").exit()
 '''
 @check50.check(compiles)
 def test2():
