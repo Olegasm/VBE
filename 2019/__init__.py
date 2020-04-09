@@ -12,6 +12,16 @@ def exists():
 def compiles():
     """aliejus.cpp kompiliuojasi be klaidų."""
     check50.run("g++ c.cpp -lcrypt -lcs50 -lm -o c").exit(timeout = 25)
+    
+@check50.check(compiles)
+def exists_txt():
+    """U1.txt egzistuoja."""
+    check50.exists("U1.txt")
+    
+@check50.check(exists_txt)
+def exists_reztxt():
+    """U1rez.txt egzistuoja."""
+    check50.exists("U1rez.txt")
 
 '''
 @check50.check(compiles)    
