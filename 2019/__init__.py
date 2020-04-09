@@ -10,7 +10,7 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    """aliejus.cpp compiles."""
+    """aliejus.cpp kompiliuojasi be klaidų."""
     check50.run("g++ c.cpp -lcrypt -lcs50 -lm -o c").exit(timeout = 25)
 
 '''
