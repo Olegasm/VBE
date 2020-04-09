@@ -1,9 +1,9 @@
+lab50: true 
+
 check50:
   files:
     - !exclude "*"
     - !require "aliejus.cpp"
- 
-lab50: true 
  
 #lab50:
 #  files:
