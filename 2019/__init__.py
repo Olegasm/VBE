@@ -29,7 +29,7 @@ def test0():
     check50.run("> U1rez.txt").exit(0)
 #    check50.run(./aliejus).exit(0)
         
-@check50.check(compiles)
+@check50.check(compiles, exists_txt)
 def test1():
     """skaitome is U1.txt"""
     with open('U1.txt') as f:
