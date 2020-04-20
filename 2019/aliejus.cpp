@@ -1,4 +1,4 @@
 int main()
 {
-    a//sėkmingo programavimo!
+    //sėkmingo Tau programavimo!
 }
