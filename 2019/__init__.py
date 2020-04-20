@@ -26,7 +26,7 @@ def exists_reztxt():
 @check50.check(compiles)
 def test0():
     """teisingai paskaiciuoja pripilta alieju."""
-    check50.run("open('U1rez.txt', 'w').close()")
+    check50.run("> U1rez.txt")
 #    check50.run(./aliejus).exit(0)
         
         
