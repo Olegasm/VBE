@@ -5,7 +5,7 @@ import check50.c
 @check50.check()
 def exists():
     """aliejus.cpp egzistuoja."""
-    check50.exists("aliejus.cpp", "U1.txt", "U1rez.txt")
+    check50.exists("aliejus.cpp")
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
@@ -13,15 +13,15 @@ def compiles():
     """aliejus.cpp kompiliuojasi be klaidų."""
     check50.run("g++ aliejus.cpp -lcrypt -lcs50 -lm -o aliejus").exit(0)
     
-#@check50.check(compiles)
-#def exists_txt():
-#    """U1.txt egzistuoja."""
-#    check50.exists("U1.txt")
+@check50.check(compiles)
+def exists_txt():
+    """U1.txt egzistuoja."""
+    check50.exists("U1.txt")
     
-#@check50.check(compiles)
-#def exists_reztxt():
-#    """U1rez.txt egzistuoja."""
-#    check50.exists("U1rez.txt")
+@check50.check(compiles)
+def exists_reztxt():
+    """U1rez.txt egzistuoja."""
+    check50.exists("U1rez.txt")
     
 @check50.check(compiles)
 def test0():
