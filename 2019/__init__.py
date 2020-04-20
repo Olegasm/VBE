@@ -38,7 +38,7 @@ def test1():
         raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
     for x in lines:
         if not isinstance(x, int):
-        raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
+            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
         
 # reikia parasyti check'a, jog isitikinti, jog visos astuonios reikes yra irasytos.
         
