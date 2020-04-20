@@ -27,7 +27,7 @@ def exists_reztxt():
 def test0():
     """teisingai paskaiciuoja pripilta alieju."""
     check50.run(open('file.txt', 'w').close())
-    check50.run(./aliejus).exit(0)
+#    check50.run(./aliejus).exit(0)
         
         
 
