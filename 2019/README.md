@@ -55,6 +55,8 @@ kiek litrų aliejaus liko neišpilstyta.
 
 <sup>1</sup>Pascal programavimo kalboje turi būti procedūra.
 
+![VBE-IT-2019-Aliejus]
+
 {% endspoiler %}
 
 {% spoiler "Užduoties suvokimas :muscle: %}
