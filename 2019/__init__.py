@@ -29,6 +29,8 @@ def test0():
     check50.run("> U1rez.txt").exit(0)
 #    check50.run(./aliejus).exit(0)
         
+
+# reikia parasyti check'a, jog isitikinti, jog visos astuonios reikes yra irasytos.
         
 
 '''
