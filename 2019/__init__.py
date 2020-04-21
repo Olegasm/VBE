@@ -29,16 +29,16 @@ def test0():
     check50.run("> U1rez.txt").exit(0)
 #    check50.run(./aliejus).exit(0)
         
-#@check50.check(exists)
-#def test1():
-#    """Ar teisingai surasyta informacija faile U1.txt"""
-#    with open('U1.txt') as f:
-#        lines = f.read().split()
-#    if len(lines) != 8:
-#        raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
-#    for x in lines:
-#        if not isinstance(x, int):
-#            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
+@check50.check(exists)
+def test1():
+    """Ar teisingai surasyta informacija faile U1.txt"""
+    with open('U1.txt') as f:
+        lines = f.read().split()
+    if len(lines) != 8:
+        raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
+    for x in lines:
+        if not isinstance(x, int):
+            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
         
 # reikia parasyti check'a, jog isitikinti, jog visos astuonios reikes yra irasytos.
         
