@@ -35,14 +35,13 @@ def test1():
     """Ar teisingai surasyta informacija faile U1.txt"""
     with open('U1.txt') as f:
         lines = f.read().split()
-    if os.stat(file_path).st_size == 0:
-        raise check50.Failure("file U1.txt yra tuscias")
-    elif len(lines) != 8:
+#    if os.stat(file_path).st_size == 0:
+#        raise check50.Failure("file U1.txt yra tuscias")
+    if len(lines) != 8:
         raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
-    elif
-        for x in lines:
-            if not isinstance(x, int):
-                raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
+    for x in lines:
+        if not isinstance(x, int):
+            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
         
 # reikia parasyti check'a, jog isitikinti, jog visos astuonios reikes yra irasytos.
         
