@@ -16,7 +16,7 @@ def compiles():
 @check50.check(compiles)
 def exists_txt():
     """U1.txt egzistuoja."""
-    check50.exists("U1.txt")
+    check50.exists("U1")
     
 @check50.check(compiles)
 def exists_reztxt():
