@@ -33,8 +33,8 @@ def test0():
         raise check50.Failure("file U1.txt yra tuscias")
     if len(lines) != 8:
         raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
-    for x in lines:
-        if not isinstance(x, int):
+    for i in range(len(lines)):
+        if not isinstance(lines[i], int):
             raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
         
 @check50.check(compiles)
