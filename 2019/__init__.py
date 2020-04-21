@@ -35,7 +35,7 @@ def test1():
     """Ar teisingai surasyta informacija faile U1.txt"""
     with open('U1.txt') as f:
         lines = f.read().split()
-    if os.stat(file_path).st_size == 0:
+    if os.stat(f).st_size == 0:
         raise check50.Failure("file U1.txt yra tuscias")
     if len(lines) != 8:
         raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
