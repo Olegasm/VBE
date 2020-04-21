@@ -22,15 +22,9 @@ def exists_txt():
 def exists_reztxt():
     """U1rez.txt egzistuoja."""
     check50.exists("U1rez.txt")
-    
-@check50.check(compiles)
-def test0():
-    """teisingai paskaiciuoja pripilta alieju."""
-    check50.run("> U1rez.txt").exit(0)
-#    check50.run(./aliejus).exit(0)
         
 @check50.check(exists)
-def test1():
+def test0():
     """Ar teisingai surasyta informacija faile U1.txt"""
     with open('U1.txt') as f:
         lines = f.read().split()
@@ -42,7 +36,15 @@ def test1():
         if not isinstance(x, int):
             raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
         
-# reikia parasyti check'a, jog isitikinti, jog visos astuonios reikes yra irasytos.
+@check50.check(compiles)
+def test1():
+    """Ar file U1rez.txt nera tuscias"""
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./aliejus").exit(0)
+    with open('U1rez.txt') as f:
+        lines = f.read().split()
+    if not lines:
+        raise check50.Failure("file U1.txt yra tuscias")
         
 
 '''
