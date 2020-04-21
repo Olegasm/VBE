@@ -2,6 +2,9 @@ import check50
 import check50.c
 #import filecmp
 
+with open('U1.txt') as f:
+     lines = f.read().split()
+
 @check50.check()
 def exists():
     """aliejus.cpp egzistuoja."""
@@ -26,8 +29,6 @@ def exists_reztxt():
 @check50.check(exists)
 def test0():
     """Ar teisingai surasyta informacija faile U1.txt"""
-    with open('U1.txt') as f:
-        lines = f.read().split()
     if not lines:
         raise check50.Failure("file U1.txt yra tuscias")
     if len(lines) != 8:
