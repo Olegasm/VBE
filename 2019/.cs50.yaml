@@ -2,13 +2,14 @@ check50:
   files:
     - !exclude "*"
     - !require "aliejus.cpp"
- 
+    
 lab50:
   files:
     - !exclude "*"
     - !include "aliejus.cpp"
-
+    
 submit50:
   files:
     - !exclude "*"
     - !require "aliejus.cpp"
+    
