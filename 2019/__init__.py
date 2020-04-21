@@ -1,6 +1,5 @@
 import check50
 import check50.c
-import os
 #import filecmp
 
 @check50.check()
@@ -35,7 +34,7 @@ def test1():
     """Ar teisingai surasyta informacija faile U1.txt"""
     with open('U1.txt') as f:
         lines = f.read().split()
-    if os.stat(f).st_size == 0:
+    if len(lines) == 0:
         raise check50.Failure("file U1.txt yra tuscias")
     if len(lines) != 8:
         raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
