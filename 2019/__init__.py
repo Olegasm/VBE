@@ -97,8 +97,8 @@ def test1():
     """Teisingai paskaiciuoja aliejaus ispilstyma i esamus indus"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
-    with open('U1rez.txt') as fRez:
-        linesRez = fRez.read().split()
+    with open('U1rez.txt') as f1:
+        linesRez = f1.read().split()
         if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
             pass
         else:
@@ -109,8 +109,8 @@ def test2():
     """Teisingai suskaiciuoja aliejaus likuti"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
-    with open('U1rez.txt') as f:
-        linesRez = f.read().split()
+    with open('U1rez.txt') as f2:
+        linesRez = f2.read().split()
         if (str(aliejuNeispilstytas) != linesRez[3]):
             raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
 
