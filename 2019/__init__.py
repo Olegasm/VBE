@@ -113,7 +113,7 @@ def test1():
     with open('U1rez.txt') as fRez:
         linesRez = fRez.read().split()
         if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
-            
+            pass
         else:
             raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
 '''
