@@ -120,6 +120,20 @@ def test2():
             if (str(aliejuNeispilstytas) != linesRez[3]):
                 raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
 
+@check50.check(test1)
+def test3():
+    """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./aliejus").exit(0)
+    with open('U1rez.txt') as f1:
+        linesRez = f1.read().split()
+        if(len(linesRez) < 7):
+            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+        else:
+            if ((str(litras1Likutis) == linesRez[4]) and (str(litras3Likutis) == linesRez[5]) and (str(litras5Likutis) == linesRez[6])):
+                pass
+            else:
+                raise check50.Failure("Blogai suskaičiuota kiek liko nepanaudotų indų")
 '''
 @check50.check(compiles)
 def test2():
