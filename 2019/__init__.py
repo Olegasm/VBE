@@ -65,7 +65,9 @@ with open('U1.txt') as f:
     print(litras3Reikia, end = " ")
     print(litras5Reikia)
 
-    gautasPelnas = ((litras1ispilstyta + litras1Reikia) * litras1Kaina + (litras3ispilstyta + litras3Reikia) * litras3Kaina + (litras5ispilstyta + litras5Reikia) * litras5Kaina) - gamybosIslaidos
+    gautasPelnas = (((litras1ispilstyta + litras1Reikia) * litras1Kaina
+        + (litras3ispilstyta + litras3Reikia) * litras3Kaina
+        + (litras5ispilstyta + litras5Reikia) * litras5Kaina) - gamybosIslaidos)
 
     print(gautasPelnas)
 
@@ -108,10 +110,11 @@ def test1():
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f:
-        lines = f.read().split()
-    if not lines:
-        raise check50.Failure("file U1.txt yra tuscias")
-
+        linesRez = f.read().split()
+        if ((litras1ispilstyta != linesRez[0])
+            and (litras3ispilstyta != linesRez[0])
+            and (litras5ispilstyta != linesRez[0]))
+            raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
 
 '''
 @check50.check(compiles)
