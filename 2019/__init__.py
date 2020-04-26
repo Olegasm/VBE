@@ -103,7 +103,7 @@ def test1():
             pass
         else:
             raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
-'''
+            
 @check50.check(compiles)
 def test2():
     """Teisingai suskaiciuoja aliejaus likuti"""
@@ -111,11 +111,8 @@ def test2():
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f:
         linesRez = f.read().split()
-        if ((str(litras1ispilstyta) != linesRez[0])
-            and (str(litras3ispilstyta) != linesRez[0])
-            and (str(litras5ispilstyta) != linesRez[0])):
-            raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")            
-'''            
+        if ((str(aliejuNeispilstytas) != linesRez[3]):
+            raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
 
 '''
 @check50.check(compiles)
