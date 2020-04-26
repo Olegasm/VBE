@@ -81,7 +81,7 @@ def exists_reztxt():
         
 @check50.check(exists)
 def test0():
-    """Teisingai surasyta informacija faile U1.txt"""
+    """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
         raise check50.Failure("file U1.txt yra tusčias")
     if len(lines) != 8:
@@ -109,7 +109,7 @@ def test1():
             
 @check50.check(compiles)
 def test2():
-    """Teisingai suskaičiuoja aliejaus likutį"""
+    """Teisingai paskaičiuoja aliejaus likutį"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f2:
@@ -137,7 +137,7 @@ def test3():
                 
 @check50.check(test2)
 def test4():
-    """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
+    """Teisingai paskaičiuoja reikiamų papildomų indų kiekį"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
@@ -152,7 +152,7 @@ def test4():
                 
 @check50.check(test4)
 def test5():
-    """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
+    """Teisingai paskaičiuoja gautą pelną"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
