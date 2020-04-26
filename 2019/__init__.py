@@ -160,7 +160,7 @@ def test5():
         if(len(linesRez) < 11):
             raise check50.Failure("File U1rez.txt nepakanka duomenų")
         else:
-            if (srt(gautasPelnas) != linesRez[10]):
+            if (str(gautasPelnas) != linesRez[10]):
                 raise check50.Failure("Blogai suskaičiuoja gautą pelną")
                 
 '''
