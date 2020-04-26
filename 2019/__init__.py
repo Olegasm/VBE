@@ -104,7 +104,7 @@ def test0():
 #        if not isinstance(lines[i], int):
 #            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
 
-'''
+
 @check50.check(compiles)
 def test1():
     """Ar file U1rez.txt nera tuscias"""
@@ -114,9 +114,9 @@ def test1():
         linesRez = f.read().split()
         if ((litras1ispilstyta != linesRez[0])
             and (litras3ispilstyta != linesRez[0])
-            and (litras5ispilstyta != linesRez[0]))
+            and (litras5ispilstyta != linesRez[0])):
             raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
-'''
+
 
 '''
 @check50.check(compiles)
