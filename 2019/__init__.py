@@ -145,7 +145,7 @@ def test4():
         if(len(linesRez) < 10):
             raise check50.Failure("File U1rez.txt nepakanka duomenų")
         else:
-            if ((str(litras1Reikia) == linesRez[7]) and (str(litras3Likutis) == linesRez[8]) and (str(litras5Likutis) == linesRez[9])):
+            if ((str(litras1Reikia) == linesRez[7]) and (str(litras3Reikia) == linesRez[8]) and (str(litras5Reikia) == linesRez[9])):
                 pass
             else:
                 raise check50.Failure("Blogai suskaičiuota kiek reikia papildomai indų likusiam aliejui išpilstyti")
