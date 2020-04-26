@@ -3,7 +3,71 @@ import check50.c
 #import filecmp
 
 with open('U1.txt') as f:
-     lines = f.read().split()
+    lines = f.read().split()
+
+    litras1 = int(lines[0])
+    litras3 = int(lines[1])
+    litras5 = int(lines[2])
+
+    litras1Likutis = litras1
+    litras3Likutis = litras3
+    litras5Likutis = litras5
+
+    litras1Reikia = 0;
+    litras3Reikia = 0;
+    litras5Reikia = 0;
+
+    aliejusPradinis = int(lines[3])
+    aliejusLikutis = aliejusPradinis
+    aliejuNeispilstytas = 0
+
+    gamybosIslaidos = int(lines[4])
+
+    litras1Kaina = int(lines[5])
+    litras3Kaina = int(lines[6])
+    litras5Kaina = int(lines[7])
+
+    gautasPelnas = 0
+
+    while(litras5Likutis != 0 and aliejusLikutis >= 5):
+        aliejusLikutis -= 5
+        litras5Likutis -= 1
+    while(litras3Likutis != 0 and aliejusLikutis >= 3):
+        aliejusLikutis -= 3
+        litras3Likutis -= 1
+    while(litras1Likutis != 0 and aliejusLikutis >= 1):
+        aliejusLikutis -= 1
+        litras1Likutis -= 1
+
+    litras1ispilstyta = litras1 - litras1Likutis
+    litras3ispilstyta = litras3 - litras3Likutis
+    litras5ispilstyta = litras5 - litras5Likutis
+    aliejuNeispilstytas = aliejusLikutis
+
+    print(litras1ispilstyta, end = " ")
+    print(litras3ispilstyta, end = " ")
+    print(litras5ispilstyta, end = " ")
+    print(aliejuNeispilstytas)
+    print(litras1Likutis, end = " ")
+    print(litras3Likutis, end = " ")
+    print(litras5Likutis)
+
+    while(aliejusLikutis >= 5):
+        litras5Reikia += 1
+        aliejusLikutis -= 5
+    while(aliejusLikutis >= 3):
+        litras3Reikia += 1
+        aliejusLikutis -= 3
+    while(aliejusLikutis >= 1):
+        litras1Reikia += 1
+        aliejusLikutis -= 1
+    print(litras1Reikia, end = " ")
+    print(litras3Reikia, end = " ")
+    print(litras5Reikia)
+
+    gautasPelnas = ((litras1ispilstyta + litras1Reikia) * litras1Kaina + (litras3ispilstyta + litras3Reikia) * litras3Kaina + (litras5ispilstyta + litras5Reikia) * litras5Kaina) - gamybosIslaidos
+
+    print(gautasPelnas)
 
 @check50.check()
 def exists():
@@ -47,8 +111,18 @@ def test1():
         lines = f.read().split()
     if not lines:
         raise check50.Failure("file U1.txt yra tuscias")
-        
 
+
+'''
+@check50.check(compiles)
+def test2():
+     """Ar teisingai paskaičiuoja panauduotų indų skaičių aliejui išpilti""""
+     check50.run("> U1rez.txt").exit(0)
+     check50.run("./aliejus").exit(0)
+     with open('U1rez.txt') as f:
+          lines = f.read().split()
+'''
+     
 '''
 @check50.check(compiles)    
 def run_aliejus():
