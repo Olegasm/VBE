@@ -57,9 +57,6 @@ with open('U1.txt') as f:
     gautasPelnas = (((litras1ispilstyta + litras1Reikia) * litras1Kaina
         + (litras3ispilstyta + litras3Reikia) * litras3Kaina
         + (litras5ispilstyta + litras5Reikia) * litras5Kaina) - gamybosIslaidos)
-
-with open('U1rez.txt') as fRez:
-    linesRez = fRez.read().split()
     
 @check50.check()
 def exists():
@@ -100,6 +97,8 @@ def test1():
     """Teisingai paskaiciuoja aliejaus ispilstyma i esamus indus"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
+    with open('U1rez.txt') as fRez:
+    linesRez = fRez.read().split()
         if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
             pass
         else:
