@@ -150,6 +150,19 @@ def test4():
             else:
                 raise check50.Failure("Blogai suskaičiuota kiek reikia papildomai indų likusiam aliejui išpilstyti")
                 
+@check50.check(test4)
+def test5():
+    """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
+    check50.run("> U1rez.txt").exit(0)
+    check50.run("./aliejus").exit(0)
+    with open('U1rez.txt') as f1:
+        linesRez = f1.read().split()
+        if(len(linesRez) < 11):
+            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+        else:
+            if (gautasPelnas != linesRez[10])):
+                raise check50.Failure("Blogai suskaičiuoja gautą pelną")
+                
 '''
 @check50.check(compiles)
 def test2():
