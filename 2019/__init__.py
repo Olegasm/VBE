@@ -44,14 +44,6 @@ with open('U1.txt') as f:
     litras5ispilstyta = litras5 - litras5Likutis
     aliejuNeispilstytas = aliejusLikutis
 
-    print(litras1ispilstyta, end = " ")
-    print(litras3ispilstyta, end = " ")
-    print(litras5ispilstyta, end = " ")
-    print(aliejuNeispilstytas)
-    print(litras1Likutis, end = " ")
-    print(litras3Likutis, end = " ")
-    print(litras5Likutis)
-
     while(aliejusLikutis >= 5):
         litras5Reikia += 1
         aliejusLikutis -= 5
@@ -61,16 +53,14 @@ with open('U1.txt') as f:
     while(aliejusLikutis >= 1):
         litras1Reikia += 1
         aliejusLikutis -= 1
-    print(litras1Reikia, end = " ")
-    print(litras3Reikia, end = " ")
-    print(litras5Reikia)
 
     gautasPelnas = (((litras1ispilstyta + litras1Reikia) * litras1Kaina
         + (litras3ispilstyta + litras3Reikia) * litras3Kaina
         + (litras5ispilstyta + litras5Reikia) * litras5Kaina) - gamybosIslaidos)
 
-    print(gautasPelnas)
-
+with open('U1rez.txt') as fRez:
+    linesRez = fRez.read().split()
+    
 @check50.check()
 def exists():
     """aliejus.cpp egzistuoja."""
@@ -110,8 +100,6 @@ def test1():
     """Teisingai paskaiciuoja aliejaus ispilstyma i esamus indus"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
-    with open('U1rez.txt') as fRez:
-        linesRez = fRez.read().split()
         if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
             pass
         else:
