@@ -112,9 +112,9 @@ def test1():
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f:
         linesRez = f.read().split()
-        if ((litras1ispilstyta != linesRez[0])
-            and (litras3ispilstyta != linesRez[0])
-            and (litras5ispilstyta != linesRez[0])):
+        if ((str(litras1ispilstyta) != linesRez[0])
+            and (str(litras3ispilstyta) != linesRez[0])
+            and (str(litras5ispilstyta) != linesRez[0])):
             raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
 
 
