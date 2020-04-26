@@ -99,10 +99,13 @@ def test1():
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
-        if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
-            pass
+        if(len(linesRez) < 3):
+            raise check50.Failure("File U1rez.txt nepakanka duomenų")
         else:
-            raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
+            if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
+                pass
+            else:
+                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
             
 @check50.check(compiles)
 def test2():
@@ -111,8 +114,11 @@ def test2():
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f2:
         linesRez = f2.read().split()
-        if (str(aliejuNeispilstytas) != linesRez[3]):
-            raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
+        if(len(linesRez) < 4):
+            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+        else:
+            if (str(aliejuNeispilstytas) != linesRez[3]):
+                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
 
 '''
 @check50.check(compiles)
