@@ -81,11 +81,11 @@ def exists_reztxt():
         
 @check50.check(exists)
 def test0():
-    """Ar teisingai surasyta informacija faile U1.txt"""
+    """Teisingai surasyta informacija faile U1.txt"""
     if not lines:
-        raise check50.Failure("file U1.txt yra tuscias")
+        raise check50.Failure("file U1.txt yra tusčias")
     if len(lines) != 8:
-        raise check50.Failure("file U1.txt turi buti irasyti astuoni skaiciai")
+        raise check50.Failure("file U1.txt turi būti įrasyti aštuoni skaičiai")
 # blogai veikia, pabaigti
 #    for i in range(len(lines)):
 #        if not isinstance(lines[i], int):
@@ -94,7 +94,7 @@ def test0():
 
 @check50.check(compiles)
 def test1():
-    """Teisingai paskaiciuoja aliejaus ispilstyma i esamus indus"""
+    """Teisingai paskaičiuoja aliejaus išpilstyma į esamus indus"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
@@ -109,7 +109,7 @@ def test1():
             
 @check50.check(compiles)
 def test2():
-    """Teisingai suskaiciuoja aliejaus likuti"""
+    """Teisingai suskaičiuoja aliejaus likutį"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f2:
