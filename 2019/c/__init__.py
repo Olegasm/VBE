@@ -68,7 +68,7 @@ def exists():
 def compiles():
     """aliejus.c kompiliuojasi be klaidų."""
     check50.c.compile("aliejus.c", lcs50=True)
-'''    
+    
 @check50.check(compiles)
 def exists_txt():
     """U1.txt egzistuoja."""
@@ -162,4 +162,4 @@ def test5():
         else:
             if (str(gautasPelnas) != linesRez[10]):
                 raise check50.Failure("Blogai suskaičiuoja gautą pelną")
-'''
+
