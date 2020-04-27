@@ -67,7 +67,7 @@ def exists():
 @check50.check(exists)
 def compiles():
     """aliejus.c kompiliuojasi be klaidų."""
-    check50.c.compile("aliejus.c")
+    check50.c.compile("aliejus.c", lcs50=True)
     
 @check50.check(compiles)
 def exists_txt():
