@@ -1,0 +1,18 @@
+check50:
+  files:
+    - !exclude "*"
+    - !require "aliejus.cpp"
+    - !require "U1.txt"
+    - !require "U1rez.txt"
+
+lab50:
+  files:
+    - !exclude "*"
+    - !include "aliejus.cpp"
+    - !include "U1.txt"
+    - !include "U1rez.txt"
+
+submit50:
+  files:
+    - !exclude "*"
+    - !require "aliejus.cpp"
