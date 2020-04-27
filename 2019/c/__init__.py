@@ -60,14 +60,14 @@ with open('U1.txt') as f:
     
 @check50.check()
 def exists():
-    """aliejus.cpp egzistuoja."""
-    check50.exists("aliejus.cpp")
+    """aliejus.c egzistuoja."""
+    check50.exists("aliejus.c")
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
-    """aliejus.cpp kompiliuojasi be klaidų."""
-    check50.run("g++ aliejus.cpp -lcrypt -lcs50 -lm -o aliejus").exit(0)
+    """aliejus.c kompiliuojasi be klaidų."""
+    check50.c.compile("aliejus.c")
     
 @check50.check(compiles)
 def exists_txt():
