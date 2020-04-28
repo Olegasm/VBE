@@ -115,8 +115,8 @@ Tu gerai varai!
 
 {% endspoiler %} 
 
-{% spoiler "How to check50, submit50 :four_leaf_clover:" %}
-Norint pasitikrinti ar programą korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gauante atsakymus U1rez.txt faile. Bet jeigu labai norite, yra basic patikrinimas:
+{% spoiler "Kaip daryti check50, submit50 :four_leaf_clover:" %}
+Norint pasitikrinti ar programą korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
 > check50 Olegasm/VBE/IT/2019/c
 
 Jeigu jaučiate, jog sėkmingai padarėte, tada prašau priduokite savo programą, parašius konsolėje:
