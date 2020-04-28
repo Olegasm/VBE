@@ -65,18 +65,18 @@ kiek litrų aliejaus liko neišpilstyta.
 {% video https://youtu.be/wzzUCeGZ3Os %}
 {% endspoiler %}
 
-{% spoiler "Tekstinis vedlys :page_with_curl:" %}
-Vieta Jūsų detaliam aprašymui
-{% endspoiler %} 
-
 {% endspoiler %}
 
 {% spoiler "Algoritminis mąstymas :sunglasses:" %}
 ![Image of To-Do](https://pbs.twimg.com/media/C1jVr21XcAAosxF.jpg)
-1. Sukompiliuokite savo programą
-1. Paleiskite programa
-1. Parasykite koda:
-    1. Atspausdinkite kiek aliejaus yra ispilstyta ir kiek jo liko
+1. Sukompiliuokite savo programą.
+1. Paleiskite programą.
+1. Parašykite koda:
+    1. Nuskaitykite informaciją iš failo U1.txt.
+    1. Atspausdinkite nuskaitytą informaciją į failą U1rez.txt.
+    1. Nuskaitykite indų kiekį, aliejų kiekį.
+    1. Apskaičiuokite kiek esamų indų galite pripilti, turing tam tikrą aliejį kiekį.
+    1. Įrašykite į failą U1rez.txt, kiek ir kokių indų panaudojame aliejui išpilstyti bei kiek aliejaus liko.
     1.  ir t.t.
 {% endspoiler %} 
 
