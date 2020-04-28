@@ -1,12 +1,12 @@
 # Išpręskime VBE IT 2019 metų užduotį „Aliejus“
 
+{% spoiler "Kaip vyksta dalykai :pencil:" %}
+Ką reikia žinoti
+{% endspoiler %}
+
 {% spoiler "IT egzamino uzduotis :scream:"%}
 
 # IV. Programavimo praktinės užduotys
-
-Maksimalus vertinimas – 50 taškų:
-* Aliejus - 20 taškų
-* Sportas - 30 taškų
 
 ## 1 užduotis. Aliejus 
 
@@ -82,37 +82,6 @@ kiek litrų aliejaus liko neišpilstyta.
 
 {% spoiler "Programavimas :computer:" %}
 ![Image of point left](https://media1.giphy.com/media/1n9At3XeXvyVZdydfK/giphy.gif)
-
-
-{% spoiler "Užuomina 1: Rašymas į bylą" %}
-## Įsisavink duomenų rašymą į bylą iš šitos nuorodos:
-http://www.cplusplus.com/doc/tutorial/files/
-{% endspoiler %} 
-
-{% spoiler "Užuomina 2: Masyvų naudojimas" %}
-## Arrays in C/C++
-
-An array in C or C++ is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to store similar type of elements as in the data type must be the same for all elements. They can be used to store collection of primitive data types such as int, float, double, char, etc of any particular type. To add to it, an array in C or C++ can store derived data types such as the structures, pointers etc. Given below is the picturesque representation of an array.
-
-![Image of point left](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/05/Arrays.png)
-
-## Why do we need arrays?
-
-We can use normal variables (v1, v2, v3, ..) when we have a small number of objects, but if we want to store a large number of instances, it becomes difficult to manage them with normal variables. The idea of an array is to represent many instances in one variable.
-
-
-![Image of point left](https://www.geeksforgeeks.org/wp-content/uploads/Array-Declaration-In-C.png)
-
-{% endspoiler %} 
-
-{% spoiler "Užuomina 3: Algoritmo sugalvojimas" %}
-Tu gali :D
-{% endspoiler %} 
-
-{% spoiler "Užuomina n:" %}
-Tu gerai varai!
-{% endspoiler %} 
-
 {% endspoiler %} 
 
 {% spoiler "Kaip daryti check50, submit50 :four_leaf_clover:" %}
