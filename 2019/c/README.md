@@ -115,7 +115,7 @@ Tu gerai varai!
 
 {% endspoiler %} 
 
-{% spoiler "2020 IT VBE užduotys :trollface:" %}
-https://bit.ly/2xqI0ZT
+{% spoiler "How to check50, submit50 :four_leaf_clover:" %}
+> check50 Olegasm/VBE/IT/2019/c
+> submit50 Olegasm/VBE/IT/2019/c
 {% endspoiler %} 
-
