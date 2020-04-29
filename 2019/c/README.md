@@ -1,10 +1,18 @@
 # Išpręskime VBE IT 2019 metų užduotį „Aliejus“
 
 {% spoiler "Kaip vyksta dalykai :pencil:" %}
-Ką reikia žinoti
+Priešais Jus yra Valstybės brandos egzamino Informacinių technologijų vienos dalies simuliacija.
+Egzamino metu negalima naudotis internetu, todėl ir Jums patariu to nedaryti.
+Jeigu natūraliai reikės pagalbos (sintaksei prisiminti ir pan.), tada galite google'intis, BET visus šaltinius, kuriuos aplankėte, prašau, įdėkite į savo programą į komentarą viršuje.
+
+Pati užduotis yra pateikta skyriuje "IT egzamino užduotis". Egzamine reikės pačiam užduotį suprasto.
+Tačiau jeigu matysite, jog sunku savarankiškai suprasti užduotį, tada galite pažiūrėti walkthrough skyriuje "Užduoties suvokimas".
+Skyriuje "Algoritminis mąstymas" užduoties atlikimas šiek tiek išskaidyta į tarpinius žingsnius, irgi nepatarčiau naudoti.
+
+Sėkmės!
 {% endspoiler %}
 
-{% spoiler "IT egzamino uzduotis :scream:"%}
+{% spoiler "IT egzamino užduotis :scream:"%}
 
 # IV. Programavimo praktinės užduotys
 
@@ -85,9 +93,13 @@ kiek litrų aliejaus liko neišpilstyta.
 {% endspoiler %} 
 
 {% spoiler "Kaip daryti check50, submit50 :four_leaf_clover:" %}
+Norint pasinaudoti check50 ar submit50, reikia aplankyti šią nuorodą:
+> https://submit.cs50.io/invites/1d1aa7b05d25492085fb7518135a245d
+
 Norint pasitikrinti ar programą korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
 > check50 Olegasm/VBE/IT/2019/c
 
 Jeigu jaučiate, jog sėkmingai padarėte, tada prašau priduokite savo programą, parašius konsolėje:
 > submit50 Olegasm/VBE/IT/2019/c
+Kaip matote taškai už korektiškumą automatiškai neparašuomi, bet galite patys suskaičiuoti :D
 {% endspoiler %} 
