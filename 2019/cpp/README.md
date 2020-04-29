@@ -1,12 +1,21 @@
 # Išpręskime VBE IT 2019 metų užduotį „Aliejus“
 
-{% spoiler "IT egzamino uzduotis :scream:"%}
+{% spoiler "Kaip vyksta dalykai :pencil:" %}
+Priešais Jus yra Valstybės brandos egzamino Informacinių technologijų vienos dalies simuliacija. Taigi norint patirti egzamino džiaugsmą, turėtumėte viską padaryti savarankiškai.
+Egzamino metu negalima naudotis internetu, todėl ir Jums patariu to nedaryti.
+Jeigu natūraliai reikės pagalbos (sintaksei prisiminti ir pan.), tada galite google'intis, BET visus šaltinius, kuriuos aplankėte, prašau, įdėkite į savo programą į komentarą viršuje.
+
+Pati užduotis yra pateikta skyriuje **"IT egzamino užduotis"**. Egzamine reikės patiems suprasti užduotį... ją skaitant... jokių vaizdo medžiagų...
+Tačiau jeigu matysite, jog sunku savarankiškai suprasti užduotį, tada galite pažiūrėti walkthrough skyriuje **"Užduoties suvokimas"**.
+Skyriuje **"Algoritminis mąstymas"** užduoties atlikimas yra šiek tiek išskaidytas į tarpinius žingsnius, irgi nepatarčiau naudoti :D
+
+Sėkmės!
+![sekmes](https://media.makeameme.org/created/good-luck-youve.jpg)
+{% endspoiler %}
+
+{% spoiler "IT egzamino užduotis :scream:"%}
 
 # IV. Programavimo praktinės užduotys
-
-Maksimalus vertinimas – 50 taškų:
-* Aliejus - 20 taškų
-* Sportas - 30 taškų
 
 ## 1 užduotis. Aliejus 
 
@@ -65,57 +74,34 @@ kiek litrų aliejaus liko neišpilstyta.
 {% video https://youtu.be/wzzUCeGZ3Os %}
 {% endspoiler %}
 
-{% spoiler "Tekstinis vedlys :page_with_curl:" %}
-Vieta Jūsų detaliam aprašymui
-{% endspoiler %} 
-
 {% endspoiler %}
 
 {% spoiler "Algoritminis mąstymas :sunglasses:" %}
 ![Image of To-Do](https://pbs.twimg.com/media/C1jVr21XcAAosxF.jpg)
-1. Sukompiliuokite savo programą
-1. Paleiskite programa
-1. Parasykite koda:
-    1. Atspausdinkite kiek aliejaus yra ispilstyta ir kiek jo liko
+1. Sukompiliuokite savo programą.
+1. Paleiskite programą.
+1. Parašykite koda:
+    1. Nuskaitykite informaciją iš failo U1.txt.
+    1. Atspausdinkite nuskaitytą informaciją į failą U1rez.txt.
+    1. Nuskaitykite indų kiekį, aliejų kiekį.
+    1. Apskaičiuokite kiek esamų indų galite pripilti, turing tam tikrą aliejį kiekį.
+    1. Įrašykite į failą U1rez.txt, kiek ir kokių indų panaudojame aliejui išpilstyti bei kiek aliejaus liko.
     1.  ir t.t.
 {% endspoiler %} 
 
 {% spoiler "Programavimas :computer:" %}
 ![Image of point left](https://media1.giphy.com/media/1n9At3XeXvyVZdydfK/giphy.gif)
-
-
-{% spoiler "Užuomina 1: Rašymas į bylą" %}
-## Įsisavink duomenų rašymą į bylą iš šitos nuorodos:
-http://www.cplusplus.com/doc/tutorial/files/
 {% endspoiler %} 
 
-{% spoiler "Užuomina 2: Masyvų naudojimas" %}
-## Arrays in C/C++
+{% spoiler "Kaip daryti check50, submit50 :four_leaf_clover:" %}
+Norint pasinaudoti check50 ar submit50, reikia aplankyti šią nuorodą:
+> https://submit.cs50.io/invites/1d1aa7b05d25492085fb7518135a245d
 
-An array in C or C++ is a collection of items stored at contiguous memory locations and elements can be accessed randomly using indices of an array. They are used to store similar type of elements as in the data type must be the same for all elements. They can be used to store collection of primitive data types such as int, float, double, char, etc of any particular type. To add to it, an array in C or C++ can store derived data types such as the structures, pointers etc. Given below is the picturesque representation of an array.
+Norint pasitikrinti ar programą korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
+> check50 Olegasm/VBE/IT/2019/c
 
-![Image of point left](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/05/Arrays.png)
-
-## Why do we need arrays?
-
-We can use normal variables (v1, v2, v3, ..) when we have a small number of objects, but if we want to store a large number of instances, it becomes difficult to manage them with normal variables. The idea of an array is to represent many instances in one variable.
-
-
-![Image of point left](https://www.geeksforgeeks.org/wp-content/uploads/Array-Declaration-In-C.png)
-
-{% endspoiler %} 
-
-{% spoiler "Užuomina 3: Algoritmo sugalvojimas" %}
-Tu gali :D
-{% endspoiler %} 
-
-{% spoiler "Užuomina n:" %}
-Tu gerai varai!
-{% endspoiler %} 
-
-{% endspoiler %} 
-
-{% spoiler "2020 IT VBE užduotys :trollface:" %}
-https://bit.ly/2xqI0ZT
+Jeigu jaučiate, jog sėkmingai padarėte, tada prašau priduokite savo programą, parašius konsolėje:
+> submit50 Olegasm/VBE/IT/2019/c
+Kaip matote taškai už korektiškumą automatiškai neparašuomi, bet galite patys suskaičiuoti :D
 {% endspoiler %} 
 
