@@ -9,7 +9,6 @@ Pati užduotis yra pateikta skyriuje **"IT egzamino užduotis"**. Egzamine reik�
 Tačiau jeigu matysite, jog sunku savarankiškai suprasti užduotį, tada galite pažiūrėti walkthrough skyriuje **"Užduoties suvokimas"**.
 Skyriuje **"Algoritminis mąstymas"** užduoties atlikimas yra šiek tiek išskaidytas į tarpinius žingsnius, irgi nepatarčiau naudoti :D
 
-Sėkmės!
 ![sekmes](https://media.makeameme.org/created/good-luck-youve.jpg)
 {% endspoiler %}
 
