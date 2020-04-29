@@ -70,7 +70,7 @@ kiek litrų aliejaus liko neišpilstyta.
 {% spoiler "Užduoties suvokimas :muscle: %}
 
 {% spoiler "Vaizdo medžiaga :movie_camera:" %}
-{% video https://youtu.be/wzzUCeGZ3Os %}
+{% video https://youtu.be/iwD1kcSQIs4 %}
 {% endspoiler %}
 
 {% endspoiler %}
