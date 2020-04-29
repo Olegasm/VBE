@@ -76,16 +76,16 @@ def exists_txt():
     
 @check50.check(compiles)
 def exists_reztxt():
-    """U1rez.txt egzistuoja."""
+    """U1rez.txt exist."""
     check50.exists("U1rez.txt")
         
 @check50.check(exists)
 def test0():
-    """Informacija faile U1.txt yra surašyta teisingai"""
+    """Information in file U1.txt is provided correctly"""
     if not lines:
-        raise check50.Failure("file U1.txt yra tusčias")
+        raise check50.Failure("file U1.txt is empty")
     if len(lines) != 8:
-        raise check50.Failure("file U1.txt turi būti įrasyti aštuoni skaičiai")
+        raise check50.Failure("file U1.txt should contain 8 numbers")
 # blogai veikia, pabaigti
 #    for i in range(len(lines)):
 #        if not isinstance(lines[i], int):
@@ -94,71 +94,71 @@ def test0():
 
 @check50.check(compiles)
 def test1():
-    """Teisingai paskaičiuoja aliejaus išpilstyma į esamus indus"""
+    """Correctly calculates the oil being filled in given bottles"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
         if(len(linesRez) < 3):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+            raise check50.Failure("File U1rez.txt does not have enough data")
         else:
             if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
                 pass
             else:
-                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
+                raise check50.Failure("The calculation is not correct")
             
 @check50.check(compiles)
 def test2():
-    """Teisingai paskaičiuoja aliejaus likutį"""
+    """Correctly calculates the amount of oil that wasn't used"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f2:
         linesRez = f2.read().split()
         if(len(linesRez) < 4):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+            raise check50.Failure("File U1rez.txt does not have enough data")
         else:
             if (str(aliejuNeispilstytas) != linesRez[3]):
-                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
+                raise check50.Failure("The calculation is not correct")                    
 
 @check50.check(test1)
 def test3():
-    """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
+    """Correctly calculates the number of unused bottles"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
         if(len(linesRez) < 7):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+            raise check50.Failure("File U1rez.txt does not have enough data")
         else:
             if ((str(litras1Likutis) == linesRez[4]) and (str(litras3Likutis) == linesRez[5]) and (str(litras5Likutis) == linesRez[6])):
                 pass
             else:
-                raise check50.Failure("Blogai suskaičiuota kiek liko nepanaudotų indų")
+                raise check50.Failure("The calculation is not correct")
                 
 @check50.check(test2)
 def test4():
-    """Teisingai paskaičiuoja reikiamų papildomų indų kiekį"""
+    """Correctly calculates the number of additional bottles that are need the fill the unused oil"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
         if(len(linesRez) < 10):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+            raise check50.Failure("File U1rez.txt does not have enough data")
         else:
             if ((str(litras1Reikia) == linesRez[7]) and (str(litras3Reikia) == linesRez[8]) and (str(litras5Reikia) == linesRez[9])):
                 pass
             else:
-                raise check50.Failure("Blogai suskaičiuota kiek reikia papildomai indų likusiam aliejui išpilstyti")
+                raise check50.Failure("The calculation is not correct")
                 
 @check50.check(test4)
 def test5():
-    """Teisingai paskaičiuoja gautą pelną"""
+    """Correctly calculates the given profit"""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./aliejus").exit(0)
     with open('U1rez.txt') as f1:
         linesRez = f1.read().split()
         if(len(linesRez) < 11):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+            raise check50.Failure("File U1rez.txt does not have enough data")
         else:
             if (str(gautasPelnas) != linesRez[10]):
-                raise check50.Failure("Blogai suskaičiuoja gautą pelną")
+                raise check50.Failure("The calculation is not correct")
