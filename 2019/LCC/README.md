@@ -48,10 +48,6 @@ will not, write zero. If there will be a loss, write down what (negative number)
 * Create and write a program that counts how many containers and
 how many liters of oil remained unfilled.
 * Do not use sentences for working with the screen in the program.
-
-
-![lentele](VBE-IT-2019-Aliejus.png)
-
 {% endspoiler %}
 
 {% spoiler "How to check50, submit50 :four_leaf_clover:" %}
