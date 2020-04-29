@@ -97,9 +97,9 @@ Norint pasinaudoti check50 ar submit50, reikia aplankyti šią nuorodą:
 > https://submit.cs50.io/invites/1d1aa7b05d25492085fb7518135a245d
 
 Norint pasitikrinti ar programa korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
-> check50 Olegasm/VBE/IT/2019/c
+> check50 Olegasm/VBE/IT/2019/LCC
 
 Jeigu jaučiate, jog sėkmingai padarėte, tada prašau priduokite savo programą, parašius konsolėje:
-> submit50 Olegasm/VBE/IT/2019/c
+> submit50 Olegasm/VBE/IT/2019/LCC
 Kaip matote taškai už korektiškumą automatiškai neparašuomi, bet galite patys suskaičiuoti :D
 {% endspoiler %} 
