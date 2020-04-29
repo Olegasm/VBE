@@ -60,18 +60,18 @@ with open('U1.txt') as f:
     
 @check50.check()
 def exists():
-    """aliejus.c egzistuoja."""
+    """aliejus.c exist."""
     check50.exists("aliejus.c")
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
-    """aliejus.c kompiliuojasi be klaidų."""
+    """aliejus.c compiles."""
     check50.c.compile("aliejus.c", lcs50=True)
     
 @check50.check(compiles)
 def exists_txt():
-    """U1.txt egzistuoja."""
+    """U1.txt exist."""
     check50.exists("U1.txt")
     
 @check50.check(compiles)
