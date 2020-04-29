@@ -10,6 +10,7 @@ Tačiau jeigu matysite, jog sunku savarankiškai suprasti užduotį, tada galite
 Skyriuje "Algoritminis mąstymas" užduoties atlikimas šiek tiek išskaidyta į tarpinius žingsnius, irgi nepatarčiau naudoti.
 
 Sėkmės!
+![sekmes](https://media.makeameme.org/created/good-luck-youve.jpg)
 {% endspoiler %}
 
 {% spoiler "IT egzamino užduotis :scream:"%}
