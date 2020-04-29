@@ -97,7 +97,7 @@ kiek litrų aliejaus liko neišpilstyta.
 Norint pasinaudoti check50 ar submit50, reikia aplankyti šią nuorodą:
 > https://submit.cs50.io/invites/1d1aa7b05d25492085fb7518135a245d
 
-Norint pasitikrinti ar programą korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
+Norint pasitikrinti ar programa korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
 > check50 Olegasm/VBE/IT/2019/c
 
 Jeigu jaučiate, jog sėkmingai padarėte, tada prašau priduokite savo programą, parašius konsolėje:
