@@ -44,9 +44,11 @@ Kiekvienam skaičiui spausdinti skirtos 6 pozicijos.
 - Programoje neturi būti sakinių, skirtų darbui su ekranu.
 - Rezultatų faile turi būti keturios eilutės. Jeigu ne visi skaičiavimai atlikti, tuomet atitinkamoje eilutėje
 spausdinkite žodį NE.
-[//]: # - Parašykite procedūrą duomenims iš failo skaityti.
-[//]: # - Parašykite procedūrą tik maršrutų numeriams spausdinti didėjimo tvarka.
-[//]: # - Parašykite funkciją maršruto, kuriuo vežta daugiausia keleivių, numeriui rasti.
+<!---
+- Parašykite procedūrą duomenims iš failo skaityti.
+- Parašykite procedūrą tik maršrutų numeriams spausdinti didėjimo tvarka.
+- Parašykite funkciją maršruto, kuriuo vežta daugiausia keleivių, numeriui rasti.
+-->
 
 ![lentele](VBE-IT-2008-Tyrimai.png)
 
