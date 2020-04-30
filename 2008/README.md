@@ -26,7 +26,7 @@ maršruto numerį ir kiek įlipo keleivių (teigiamas skaičius) arba/ir maršru
 
 ![stebetoja](VBE-IT-2008-Stebetoja.png)
 
-**Duomenys.** Visi stebėjimų duomenys surašyti tekstiniame faile U1.txt. Pirmoje eilutėje yra visų mokinių surinktų
+**Duomenys.** Visi stebėjimų duomenys surašyti tekstiniame faile *U1.txt*. Pirmoje eilutėje yra visų mokinių surinktų
 duomenų skaičius *n (n ≥ 1)*. Tolesnėse n eilučių yra po du skaičius: maršruto numeris ir keleivių skaičius
 (teigiamas, jeigu įlipo, neigiamas – jeigu išlipo).
 
@@ -53,26 +53,14 @@ spausdinkite žodį NE.
 
 {% endspoiler %}
 
-{% spoiler "Užduoties suvokimas :muscle: %}
-
-{% spoiler "Vaizdo medžiaga :movie_camera:" %}
-{% video https://youtu.be/iwD1kcSQIs4 %}
-{% endspoiler %}
-
-{% endspoiler %}
-
-{% spoiler "Programavimas :computer:" %}
-![Image of point left](https://media1.giphy.com/media/1n9At3XeXvyVZdydfK/giphy.gif)
-{% endspoiler %} 
-
 {% spoiler "Kaip daryti check50, submit50 :four_leaf_clover:" %}
 Norint pasinaudoti check50 ar submit50, reikia aplankyti šią nuorodą:
 > https://submit.cs50.io/invites/1d1aa7b05d25492085fb7518135a245d
 
 Norint pasitikrinti ar programa korektiškai veikia, rekomenduojama tą padaryti be check50 ir žiūrėti, kokius gaunate atsakymus U1rez.txt faile. Bet jeigu labai norite, yra paprastas patikrinimas:
-> check50 Olegasm/VBE/IT/2019/cpp
+> check50 Olegasm/VBE/IT/2008
 
 Jeigu jaučiate, jog sėkmingai padarėte, tada prašau priduokite savo programą, parašius konsolėje:
-> submit50 Olegasm/VBE/IT/2019/cpp
+> submit50 Olegasm/VBE/IT/2008
 Kaip matote taškai už korektiškumą automatiškai neparašuomi, bet galite patys suskaičiuoti :D
 {% endspoiler %} 
