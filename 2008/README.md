@@ -42,8 +42,6 @@ Kiekvienam skaičiui spausdinti skirtos 6 pozicijos.
 **Nurodymai:**
 - Rašydami programą naudokite tik vienmačius sveikųjų skaičių masyvus.
 - Programoje neturi būti sakinių, skirtų darbui su ekranu.
-- Rezultatų faile turi būti keturios eilutės. Jeigu ne visi skaičiavimai atlikti, tuomet atitinkamoje eilutėje
-spausdinkite žodį NE.
 
 ![lentele](VBE-IT-2008-Tyrimai.png)
 
