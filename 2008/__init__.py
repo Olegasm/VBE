@@ -37,20 +37,20 @@ def exists_txt():
 def exists_reztxt():
     """U1rez.txt egzistuoja."""
     check50.exists("U1rez.txt")
-'''        
+     
 @check50.check(exists)
 def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
         raise check50.Failure("file U1.txt yra tusčias")
     if len(lines) != int(lines[0])*2+1:
-        raise check50.Failure("file U1.txt turi būti įrasyti aštuoni skaičiai")
+        raise check50.Failure(f"file U1.txt turi būti įrasyti {int(lines[0])+1} skaičiai")
 # blogai veikia, pabaigti
 #    for i in range(len(lines)):
 #        if not isinstance(lines[i], int):
 #            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
 
-
+'''
 @check50.check(compiles)
 def test1():
     """Teisingai paskaičiuoja aliejaus išpilstyma į esamus indus"""
