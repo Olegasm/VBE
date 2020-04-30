@@ -39,11 +39,11 @@ def exists_reztxt():
     """U1rez.txt egzistuoja."""
     check50.exists("U1rez.txt")
      
-@check50.check(exists)
-def test0():
-    """Informacija faile U1.txt yra surašyta teisingai"""
-    if not lines:
-        raise check50.Failure("file U1.txt yra tusčias")
+#@check50.check(exists)
+#def test0():
+#    """Informacija faile U1.txt yra surašyta teisingai"""
+#    if not lines:
+#        raise check50.Failure("file U1.txt yra tusčias")
 #    if len(lines) != int(lines[0])*2+1:
 #        raise check50.Failure("Patikrinkite ar faile U1.txt pakankamai įrašyta skaičių)
 # blogai veikia, pabaigti
@@ -75,7 +75,7 @@ def test1():
 #            else:
 #                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
             
-@check50.check(compiles)
+@check50.check(test1)
 def test2():
     """Teisingai paskaičiuoja kiek keleivių vežta kiekvienu maršrutu maršrutų numerių didėjimo tvarka"""
     check50.run("> U1rez.txt").exit(0)
@@ -91,7 +91,7 @@ def test2():
             if (int(linesRez2[masyvoIndeksas]) != test[masyvoIndeksas]):
                 raise check50.Failure("Blogai suskaičiuota")                    
 
-@check50.check(compiles)
+@check50.check(test2)
 def test3():
     """Teisingai paskaičiuoja kiek kiekvieno maršruto autobusų keleivių išlipo visose tarpinėse stotelėse"""
     check50.run("> U1rez.txt").exit(0)
