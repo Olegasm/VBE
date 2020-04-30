@@ -107,22 +107,20 @@ def test3():
         for masyvoIndeksas in range(len(linesRez3)):
             if (int(linesRez3[masyvoIndeksas]) != test[masyvoIndeksas]):
                 raise check50.Failure("Blogai suskaičiuota")
-'''                
-@check50.check(test2)
+               
+@check50.check(test3)
 def test4():
-    """Teisingai paskaičiuoja reikiamų papildomų indų kiekį"""
+    """Teisingai paskaičiuoja maršrutą, kurio visais autobusais vežta daugiausia keleivių, numerį."""
     check50.run("> U1rez.txt").exit(0)
-    check50.run("./aliejus").exit(0)
+    check50.run("./tyrimai").exit(0)
     with open('U1rez.txt') as f1:
-        linesRez = f1.read().split()
-        if(len(linesRez) < 10):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
-        else:
-            if ((str(litras1Reikia) == linesRez[7]) and (str(litras3Reikia) == linesRez[8]) and (str(litras5Reikia) == linesRez[9])):
-                pass
-            else:
-                raise check50.Failure("Blogai suskaičiuota kiek reikia papildomai indų likusiam aliejui išpilstyti")
-                
+        linesRez = f1.readline().split()
+        linesRez2 = f1.readline().split()
+        linesRez3 = f1.readline().split()
+        linesRez4 = f1.readline().split()
+        if (int(linesRez4[0]) != stoteleIlipo.index(max(stoteleIlipo))):
+            raise check50.Failure("Blogai suskaičiuota")
+'''                
 @check50.check(test4)
 def test5():
     """Teisingai paskaičiuoja gautą pelną"""
