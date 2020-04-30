@@ -45,8 +45,8 @@ def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
         raise check50.Failure("file U1.txt yra tusčias")
-#    if len(lines) != int(lines[0])*2+1:
-#        raise check50.Failure("Patikrinkite ar faile U1.txt pakankamai įrašyta skaičių)
+    if len(lines) != int(lines[0])*2+1:
+        raise check50.Failure("Patikrinkite ar faile U1.txt pakankamai įrašyta skaičių)
 # blogai veikia, pabaigti
 #    for i in range(len(lines)):
 #        if not isinstance(lines[i], int):
