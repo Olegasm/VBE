@@ -54,7 +54,7 @@ def test0():
 
 @check50.check(compiles)
 def test1():
-    """Teisingai paskaičiuoja maršrutus, kuriais važiavo bet vienat keleivis"""
+    """Teisingai paskaičiuoja maršrutus, kuriais važiavo bent vienas keleivis, numerius didėjimo tvarka."""
     check50.run("> U1rez.txt").exit(0)
     check50.run("./tyrimai").exit(0)
     test = []
@@ -65,7 +65,7 @@ def test1():
         linesRez = f1.readline().split()
         for masyvoIndeksas in range(len(linesRez)):
             if (int(linesRez[masyvoIndeksas]) != test[masyvoIndeksas]):
-                raise check50.Failure("Blogai atvaizduojami maršrutų numeriai")
+                raise check50.Failure("Blogai suskaičiuoja")
                
 #        if(len(linesRez) < 3):
 #            raise check50.Failure("File U1rez.txt nepakanka duomenų")
@@ -74,20 +74,23 @@ def test1():
 #                pass
 #            else:
 #                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
-'''            
+            
 @check50.check(compiles)
 def test2():
-    """Teisingai paskaičiuoja aliejaus likutį"""
+    """Teisingai paskaičiuoja kiek keleivių vežta kiekvienu maršrutu maršrutų numerių didėjimo tvarka"""
     check50.run("> U1rez.txt").exit(0)
-    check50.run("./aliejus").exit(0)
-    with open('U1rez.txt') as f2:
-        linesRez = f2.read().split()
-        if(len(linesRez) < 4):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
-        else:
-            if (str(aliejuNeispilstytas) != linesRez[3]):
-                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")                    
-
+    check50.run("./tyrimai").exit(0)
+    test = []
+    for counter in range(len(stoteleIlipo)):
+        if stoteleIlipo[counter] != 0:
+            test.append(stoteleIlipo[counter])
+    with open('U1rez.txt') as f1:
+        linesRez = f1.readline().split()
+        linesRez2 = f1.readline().split()
+        for masyvoIndeksas in range(len(linesRez2)):
+            if (int(linesRez2[masyvoIndeksas]) != test[masyvoIndeksas]):
+                raise check50.Failure("Blogai suskaičiuota")                    
+'''
 @check50.check(test1)
 def test3():
     """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
