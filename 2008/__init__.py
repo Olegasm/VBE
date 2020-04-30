@@ -5,16 +5,15 @@ with open('U1.txt') as f:
     lines = f.read().split()
     stoteleIlipo = [0] * (int(lines[0])+1)
     stoteleIslipo = [0] * (int(lines[0])+1)
-    try:
-        for eilute in range(1,int(lines[0])+1):
-            srautas = int(lines[eilute*2])
-            indeksas = int(lines[eilute*2-1])
-            if (srautas) > 1:
-                stoteleIlipo[indeksas] += srautas
-            else:
-                stoteleIslipo[indeksas] += srautas
-    except:
-        pass
+    
+    for eilute in range(1,int(lines[0])+1):
+        srautas = int(lines[eilute*2])
+        indeksas = int(lines[eilute*2-1])
+        if (srautas) > 1:
+            stoteleIlipo[indeksas] += srautas
+        else:
+            stoteleIslipo[indeksas] += srautas
+
 #print(stoteleIlipo)
 #print(stoteleIslipo)
 #print(stoteleIlipo.index(max(stoteleIlipo)))
