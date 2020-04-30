@@ -1,73 +1,32 @@
 import check50
 import check50.c
-#import filecmp
 
 with open('U1.txt') as f:
     lines = f.read().split()
+    stoteleIlipo = [0] * (int(lines[0])+1)
+    stoteleIslipo = [0] * (int(lines[0])+1)
+    for eilute in range(1,int(lines[0])+1):
+        srautas = int(lines[eilute*2])
+        indeksas = int(lines[eilute*2-1])
+        if (srautas) > 1:
+            stoteleIlipo[indeksas] += srautas
+        else:
+            stoteleIslipo[indeksas] += srautas
 
-    litras1 = int(lines[0])
-    litras3 = int(lines[1])
-    litras5 = int(lines[2])
-
-    litras1Likutis = litras1
-    litras3Likutis = litras3
-    litras5Likutis = litras5
-
-    litras1Reikia = 0;
-    litras3Reikia = 0;
-    litras5Reikia = 0;
-
-    aliejusPradinis = int(lines[3])
-    aliejusLikutis = aliejusPradinis
-    aliejuNeispilstytas = 0
-
-    gamybosIslaidos = int(lines[4])
-
-    litras1Kaina = int(lines[5])
-    litras3Kaina = int(lines[6])
-    litras5Kaina = int(lines[7])
-
-    gautasPelnas = 0
-
-    while(litras5Likutis != 0 and aliejusLikutis >= 5):
-        aliejusLikutis -= 5
-        litras5Likutis -= 1
-    while(litras3Likutis != 0 and aliejusLikutis >= 3):
-        aliejusLikutis -= 3
-        litras3Likutis -= 1
-    while(litras1Likutis != 0 and aliejusLikutis >= 1):
-        aliejusLikutis -= 1
-        litras1Likutis -= 1
-
-    litras1ispilstyta = litras1 - litras1Likutis
-    litras3ispilstyta = litras3 - litras3Likutis
-    litras5ispilstyta = litras5 - litras5Likutis
-    aliejuNeispilstytas = aliejusLikutis
-
-    while(aliejusLikutis >= 5):
-        litras5Reikia += 1
-        aliejusLikutis -= 5
-    while(aliejusLikutis >= 3):
-        litras3Reikia += 1
-        aliejusLikutis -= 3
-    while(aliejusLikutis >= 1):
-        litras1Reikia += 1
-        aliejusLikutis -= 1
-
-    gautasPelnas = (((litras1ispilstyta + litras1Reikia) * litras1Kaina
-        + (litras3ispilstyta + litras3Reikia) * litras3Kaina
-        + (litras5ispilstyta + litras5Reikia) * litras5Kaina) - gamybosIslaidos)
+#print(stoteleIlipo)
+#print(stoteleIslipo)
+#print(max(stoteleIlipo))
     
 @check50.check()
 def exists():
-    """aliejus.cpp egzistuoja."""
-    check50.exists("aliejus.cpp")
+    """tyrimai.cpp egzistuoja."""
+    check50.exists("tyrimai.cpp")
 #    check50.include("1.txt", "2.txt") 
 
 @check50.check(exists)
 def compiles():
-    """aliejus.cpp kompiliuojasi be klaidų."""
-    check50.run("g++ aliejus.cpp -lcrypt -lcs50 -lm -o aliejus").exit(0)
+    """tyrimai.cpp kompiliuojasi be klaidų."""
+    check50.run("g++ tyrimai.cpp -lcrypt -lcs50 -lm -o tyrimai").exit(0)
     
 @check50.check(compiles)
 def exists_txt():
@@ -78,7 +37,7 @@ def exists_txt():
 def exists_reztxt():
     """U1rez.txt egzistuoja."""
     check50.exists("U1rez.txt")
-        
+'''        
 @check50.check(exists)
 def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
@@ -162,3 +121,4 @@ def test5():
         else:
             if (str(gautasPelnas) != linesRez[10]):
                 raise check50.Failure("Blogai suskaičiuoja gautą pelną")
+'''
