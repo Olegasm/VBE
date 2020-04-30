@@ -17,7 +17,7 @@ with open('U1.txt') as f:
         pass
 #print(stoteleIlipo)
 #print(stoteleIslipo)
-#print(max(stoteleIlipo))
+#print(stoteleIlipo.index(max(stoteleIlipo)))
     
 @check50.check()
 def exists():
@@ -52,22 +52,30 @@ def test0():
 #        if not isinstance(lines[i], int):
 #            raise check50.Failure("file U1.txt turi buti buti irasyti tik sveiki skaiciai")
 
-'''
+
 @check50.check(compiles)
 def test1():
-    """Teisingai paskaičiuoja aliejaus išpilstyma į esamus indus"""
+    """Teisingai paskaičiuoja maršrutus, kuriais važiavo bet vienat keleivis"""
     check50.run("> U1rez.txt").exit(0)
-    check50.run("./aliejus").exit(0)
+    check50.run("./tyrimai").exit(0)
+    test = []
+    for counter in range(len(stoteleIlipo)):
+        if stoteleIlipo[counter] != 0:
+            test.append(counter)
     with open('U1rez.txt') as f1:
-        linesRez = f1.read().split()
-        if(len(linesRez) < 3):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
-        else:
-            if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
-                pass
-            else:
-                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
-            
+        linesRez = f1.readline().split()
+        for masyvoIndeksas in range(len(linesRez)):
+            if (int(linesRez[masyvoIndeksas]) != test[masyvoIndeksas]):
+                raise check50.Failure("Blogai atvaizduojami maršrutų numeriai")
+               
+#        if(len(linesRez) < 3):
+#            raise check50.Failure("File U1rez.txt nepakanka duomenų")
+#        else:
+#            if ((str(litras1ispilstyta) == linesRez[0]) and (str(litras3ispilstyta) == linesRez[1]) and (str(litras5ispilstyta) == linesRez[2])):
+#                pass
+#            else:
+#                raise check50.Failure("Blogai suskaičiuotas ispilstytas aliejus")
+'''            
 @check50.check(compiles)
 def test2():
     """Teisingai paskaičiuoja aliejaus likutį"""
