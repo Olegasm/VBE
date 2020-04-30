@@ -43,7 +43,7 @@ def test0():
     """Informacija faile U1.txt yra surašyta teisingai"""
     if not lines:
         raise check50.Failure("file U1.txt yra tusčias")
-    if len(lines) != 8:
+    if len(lines) != int(lines[0])*2+1:
         raise check50.Failure("file U1.txt turi būti įrasyti aštuoni skaičiai")
 # blogai veikia, pabaigti
 #    for i in range(len(lines)):
