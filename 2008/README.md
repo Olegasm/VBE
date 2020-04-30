@@ -6,8 +6,7 @@ Egzamino metu negalima naudotis internetu, todėl ir Jums patariu to nedaryti.
 Jeigu natūraliai reikės pagalbos (sintaksei prisiminti ir pan.), tada galite google'intis, BET visus šaltinius, kuriuos aplankėte, prašau, įdėkite į savo programą į komentarą viršuje.
 
 Pati užduotis yra pateikta skyriuje **"IT egzamino užduotis"**. Egzamine reikės patiems suprasti užduotį... ją skaitant... jokių vaizdo medžiagų...
-Tačiau jeigu matysite, jog sunku savarankiškai suprasti užduotį, tada galite pažiūrėti walkthrough skyriuje **"Užduoties suvokimas"**.
-Skyriuje **"Algoritminis mąstymas"** užduoties atlikimas yra šiek tiek išskaidytas į tarpinius žingsnius, irgi nepatarčiau naudoti :D
+Tačiau jeigu matysite, jog sunku savarankiškai suprasti užduotį, tada galite užklausti manęs.
 
 ![sekmes](https://media.makeameme.org/created/good-luck-youve.jpg)
 {% endspoiler %}
