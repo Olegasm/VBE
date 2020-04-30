@@ -65,7 +65,7 @@ def test1():
         linesRez = f1.readline().split()
         for masyvoIndeksas in range(len(linesRez)):
             if (int(linesRez[masyvoIndeksas]) != test[masyvoIndeksas]):
-                raise check50.Failure("Blogai suskaičiuoja")
+                raise check50.Failure("Blogai suskaičiuota")
                
 #        if(len(linesRez) < 3):
 #            raise check50.Failure("File U1rez.txt nepakanka duomenų")
@@ -90,22 +90,24 @@ def test2():
         for masyvoIndeksas in range(len(linesRez2)):
             if (int(linesRez2[masyvoIndeksas]) != test[masyvoIndeksas]):
                 raise check50.Failure("Blogai suskaičiuota")                    
-'''
-@check50.check(test1)
+
+@check50.check(compiles)
 def test3():
-    """Teisingai paskaičiuoja nepanaudotų indų kiekį"""
+    """Teisingai paskaičiuoja kiek kiekvieno maršruto autobusų keleivių išlipo visose tarpinėse stotelėse"""
     check50.run("> U1rez.txt").exit(0)
-    check50.run("./aliejus").exit(0)
+    check50.run("./tyrimai").exit(0)
+    test = []
+    for counter in range(len(stoteleIlipo)):
+        if stoteleIlipo[counter] != 0:
+            test.append(stoteleIslipo[counter])
     with open('U1rez.txt') as f1:
-        linesRez = f1.read().split()
-        if(len(linesRez) < 7):
-            raise check50.Failure("File U1rez.txt nepakanka duomenų")
-        else:
-            if ((str(litras1Likutis) == linesRez[4]) and (str(litras3Likutis) == linesRez[5]) and (str(litras5Likutis) == linesRez[6])):
-                pass
-            else:
-                raise check50.Failure("Blogai suskaičiuota kiek liko nepanaudotų indų")
-                
+        linesRez = f1.readline().split()
+        linesRez2 = f1.readline().split()
+        linesRez3 = f1.readline().split()
+        for masyvoIndeksas in range(len(linesRez3)):
+            if (int(linesRez3[masyvoIndeksas]) != test[masyvoIndeksas]):
+                raise check50.Failure("Blogai suskaičiuota")
+'''                
 @check50.check(test2)
 def test4():
     """Teisingai paskaičiuoja reikiamų papildomų indų kiekį"""
