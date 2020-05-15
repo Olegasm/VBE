@@ -61,6 +61,7 @@ with open('U1.txt') as f:
 @check50.check()
 def exists():
     """aliejus.c egzistuoja."""
+    log(lines)
     check50.exists("aliejus.c")
 #    check50.include("1.txt", "2.txt") 
 
