@@ -1,1 +1,4 @@
-
+submit50:
+  files:
+    - !exclude "*"
+    - !require "oil.py"
